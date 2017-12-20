@@ -10,7 +10,6 @@ public class Main {
     private static final Object monitor = new Object();
 
     public static void main(String[] args) {
-        // write your code here
         Thread one_second = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -47,7 +46,6 @@ public class Main {
                         }
                     }
                 }
-
             }
         });
         five_seconds.start();
@@ -71,7 +69,6 @@ public class Main {
                     }
                 }
             }
-
         });
         seven_seconds.start();
     }
